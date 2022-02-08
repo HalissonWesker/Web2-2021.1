@@ -1,0 +1,32 @@
+* { padding: 200; margin: 200; }
+
+html { font-family: 'Courier New', Courier, monospace; 
+    font-size: 20px; 
+    color: black; 
+    background: white; 
+    display: flex; 
+    justify-content: center; 
+    height: 100%;
+    
+    }
+
+body { display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: #27b8e4; 
+    width: 800px; }
+
+.title { margin: 40px; display: flex; flex-direction: column; }
+.title span { text-align: center; margin: 30px; }
+.title span a { margin: 30px; text-decoration: none; font-size: 30px; color: rgb(253, 253, 253); }
+.title span a:hover { text-decoration: underline; font-size: 25px; color: black; }
+
+form { width: 100%; margin: 0 0 50px 0; }
+form fieldset { padding: 10px; border: rgba(0, 0, 0, 0.3) solid 2px; border-radius: 5px; }
+form legend { font-weight: bold; font-size: 20px; }
+form .input { display: flex; flex-direction: column; padding: 5px; }
+form .input label { padding: 5px; }
+form .input input { padding: 7px; border: rgba(2, 2, 2, 0.3) solid 2px; border-radius: 5px; }
+form .input select { padding: 7px; border: rgba(0, 0, 0, 0.3) solid 2px; border-radius: 5px; }
+form .input button { margin: 25px; padding: 10px; background-color: black; color: #3dafe4d0; cursor: pointer; font-size: 20px; }
+form .input button:hover { background-color: white; }
