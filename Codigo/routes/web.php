@@ -41,8 +41,8 @@ Route::get('/clientes', [ClienteController::class, 'show'])->middleware('auth');
 Route::post('/StoreCliente', [ClienteController::class, 'store'])->middleware('auth');
 
 Route::get('/CadastroCliente', function(){
-    return view('clientes.cadastroClientes')->middleware('auth');
-})->name('cadastrocliente');
+    return view('clientes.cadastroClientes');
+})->name('cadastrocliente')->middleware('auth');
 Route::get('atualizarClientes/{id}', [ClienteController::class, 'create'])->middleware('auth');
 
 Route::post('/updateCliente', [ClienteController::class, 'update'])->middleware('auth');
