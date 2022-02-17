@@ -80,9 +80,9 @@
 ```
 
 ✔️ Faça as migrations para gerar as tabelas na base de dados do SGBD
-C:\Users\User\Documents\Projetos Laravel\Web2 projeto> php artisan migrate
-```Exemplo
-  C:\Users\User\Documents\Projetos Laravel\Web2 projeto PHP artisan serve 
+
+```Exemplo:
+  C:\Users\User\Documents\Projetos Laravel\Web2 projeto> php artisan migrate
 ```
 
 ✔️ E por ultimo, acesse-o pelo endereço http://127.0.0.1:8000
