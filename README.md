@@ -3,12 +3,13 @@
 </h1>
 <div align="center">
     <h2>Página inicial</h2>
-    <p><img src="https://user-images.githubusercontent.com/83023695/154505362-57edd87c-142e-4c69-823e-820ae8a856b1.png" width="100%"/></p><br>
+    <p><img src="https://user-images.githubusercontent.com/83023695/154541294-ab771dff-1146-4a65-a9ad-bc554d30a613.png" width="100%"/></p><br>
 </div>
 <p align="center">Este sistema foi desenvolvido para gestão de emprestimo de veiculo a clientes, com o framework <a href="https://laravel.com/">Laravel</a>.</p>
 <b>
   
-  
+
+
 #
   
   <h1 align="center">🖥 Projeto II</p>
