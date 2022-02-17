@@ -14,8 +14,9 @@
   <h1 align="center">🖥 Projeto II</p>
 </h1>
 <p align="center">
-  O projeto foi desenvolvido com finalidade avaliativa, no ambito da disciplina de <b>Laboratório de Programação Web II</b> - Semestre 2021.1 do curso de <b>Análise e Desenvolvimento de Sistemas</b> ofertado pelo <a href="https://www.ifbaiano.edu.br/unidades/guanambi/"><b>Instituto Federal Baiano <i>Campus</i> Guanambi</a> </b> aulas ministradas pelo professor: <a href="https://github.com/fabiomicromais"><b>Fabio Lima</b></a>
-</p>
+  O projeto foi desenvolvido com finalidade avaliativa, no ambito da disciplina de <b>Laboratório de Programação Web II</b> - Semestre 2021.1 do curso de <b>Análise e Desenvolvimento de Sistemas</b> ofertado pelo <a href="https://www.ifbaiano.edu.br/unidades/guanambi/"><b>Instituto Federal Baiano <i>Campus</i> Guanambi</a> </b> 
+   <p align="center">Aulas ministradas pelo professor: <a href="https://github.com/fabiomicromais"><b>Fabio Lima</b></a>
+</p></p>
 
 
 #
