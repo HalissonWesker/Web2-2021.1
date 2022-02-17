@@ -23,7 +23,7 @@
 
 <div align="center">
     <h1>Tecnologias Utilizadas</h1>
-    <img src="https://img.shields.io/badge/LARAVEL-777BB4?style=for-the-badge&logo=laravel&logoColor=white">
+    <img src="https://img.shields.io/badge/LARAVEL8-777BB4?style=for-the-badge&logo=laravel&logoColor=white">
     <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white">
     <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
     <img src="https://img.shields.io/badge/Mysql-316192?style=for-the-badge&logo=postgresql&logoColor=white">
@@ -40,17 +40,18 @@
 <h1 align="center">🌐Hospedagem do Sistema🌐</h1>
 <div align="center">
   🔗 <a href="http://">Link para acesso do sistema hospedado</a> 🔗
-  <p>Credenciais de acesso: 🙍‍♂️usuário: <b>admin@gmail.com</b> 🔐senha: <b>12345678</b></p>
+  <p>Credenciais de acesso: 🙍‍♂️Usuário: <b>admin@gmail.com</b> 🔐Senha: <b>12345678</b></p>
 </div>
 
 #
 
-### 🖥️ → Instalação local
-- Pré requisitos: Tenha instalado a versão do <a href="https://www.php.net/">PHP</a> `>= 8` e o <a href="https://getcomposer.org/">Composer</a> `>= 2`
+ <h2>🖥️ → Instalação local > Pré requisitos: </h2>
+<p>🟢<a href="https://www.php.net/">PHP</a> `>= 8`</p>
+<p>🟢<a href="https://getcomposer.org/">Composer</a> `>= 2`</p>
 
 #
 
-### 📋 → Lista de passos para instalação:
+ <h2> 📋 → Lista de passos para instalação: </h2>
 
 ✔️ Clone este repositório utilizando o comando git clone, como no exemplo a seguir:
 ```
@@ -89,7 +90,7 @@
 ✔️ E por ultimo, acesse-o pelo endereço http://127.0.0.1:8000
 
 #
-### 📄 →  Licença: GPT 3
+### 📜 →  Licença: GPT 3
 <ul>
   <ul>
     <li><a href="">Licença</a></li>
