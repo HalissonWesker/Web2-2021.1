@@ -46,28 +46,28 @@
 
 #
 
- <h2>🖥️ → Instalação local > Pré requisitos: </h2>
-<p>🟢<a href="https://www.php.net/">PHP</a> `>= 8`</p>
-<p>🟢<a href="https://getcomposer.org/">Composer</a> `>= 2`</p>
+ <h2>🖥️ → Instalação local: Pré requisitos </h2>
+<p>✔️<a href="https://www.php.net/">PHP</a> `>= 8`</p>
+<p>✔️<a href="https://getcomposer.org/">Composer</a> `>= 2`</p>
 
 #
 
  <h2> 📋 → Lista de passos para instalação: </h2>
 
-✔️ Clone este repositório utilizando o comando git clone, como no exemplo a seguir:
+🟢 Clone este repositório utilizando o comando git clone, como no exemplo a seguir:
 ```
   git clone https://github.com/HalissonWesker/Web2-2021.1.git
 ```
-✔️ Usando o terminal, abra a pasta onde clonou o repositório 
+🟢 Usando o terminal, abra a pasta onde clonou o repositório 
 ```Exemplo:
   cd C:\Users\User\Documents\Projetos Laravel\Web2 projeto
 ```
-✔️ Em seguida, ainda no terminal, instale as dependencias utilizando o comando Install do composer
+🟢 Em seguida, ainda no terminal, instale as dependencias utilizando o comando Install do composer
 ```
   C:\Users\User\Documents\Projetos Laravel\Projeto web2> Composer Install
 ```
 
-✔️ Renomeie as credenciais de acesso ao banco no arquivo `.env` de acordo com suas configurações, exemplo abaixo do mysql:
+🟢 Renomeie as credenciais de acesso ao banco no arquivo `.env` de acordo com suas configurações, exemplo abaixo do mysql:
 ```
   DB_CONNECTION=Mysql
   DB_HOST=localhost
@@ -77,18 +77,18 @@
   DB_PASSWORD=
 ```
 
-✔️ Após instalar todas as dependencias, inicie o servidor execute no terminal:
+🟢 Após instalar todas as dependencias, inicie o servidor execute no terminal:
 ```Exemplo:
   C:\Users\User\Documents\Projetos Laravel\Web2 projeto PHP artisan serve 
 ```
 
-✔️ Faça as migrations para gerar as tabelas na base de dados do SGBD
+🟢 Faça as migrations para gerar as tabelas na base de dados do SGBD
 
 ```Exemplo:
   C:\Users\User\Documents\Projetos Laravel\Web2 projeto> php artisan migrate
 ```
 
-✔️ E por ultimo, acesse-o pelo endereço http://127.0.0.1:8000
+🟢 E por ultimo, acesse-o pelo endereço http://127.0.0.1:8000
 
 #
 ### 📜 →  Licença: GPT 3
