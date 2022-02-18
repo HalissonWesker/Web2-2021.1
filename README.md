@@ -1,5 +1,5 @@
 <h1 align="center">
-   <p>:car:Sistema de Gestão de Emprestimos de Veiculo LOCAR:car:</p>
+   <p>:car:Sistema de Gestão de Emprestimo de Veiculo LOCAR:car:</p>
 </h1>
 <div align="center">
     <h2>Página inicial</h2>
