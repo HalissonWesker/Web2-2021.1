@@ -20,7 +20,7 @@
    <span class="heading-page" style="text-align:center;">Devoluções</span> <br>
    <div class="menu">
            <div class="botoesmenu"> <a href="/" class="btn btn-sm btn-danger">Voltar</a><br><br>
-            <a href="/CadastroDevolucao" class="btn btn-sm btn-primary">Realizar devolução</a><br>
+            <a href="{{ route('devolucao.create') }}" class="btn btn-sm btn-primary">Realizar devolução</a><br>
 </div>
 
       <thead class="thead-dark">

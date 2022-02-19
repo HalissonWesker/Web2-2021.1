@@ -10,7 +10,7 @@ class ClienteController extends Controller
 
 
    /* Mostrar clientes na tabela */
-   public function show(){
+   public function index(){
 
     $clientes = Cliente::all();
 
@@ -41,22 +41,25 @@ class ClienteController extends Controller
    
       $cliente->save();
 
-      return redirect('/clientes');
-
+    
+      return redirect()->route('cliente.index')->with('succes', 'Cliente cadastrado com sucesso!');
       
 
    }
 
    public function destroy($id){
       Cliente::find($id)->delete();
-      return redirect('/clientes');
-
+      return redirect()->route('cliente.index')->with('succes', 'Cliente excluido com sucesso!');
    }
+
+
    public function create($id){
       $clientes = Cliente::find($id);
 
-    return view('clientes.atualizarClientes', ['clientes' => $clientes]);
+      return view('clientes.atualizarclientes', ['clientes' => $clientes]);
    }
+
+
 
    public function update(Request $request){
       $cliente= Cliente::find($request->id);
@@ -66,7 +69,8 @@ class ClienteController extends Controller
       $cliente->telefone = $request->telefone;
       $cliente->save();
 
-      return redirect('/clientes');
+      return redirect()->route('cliente.index')->with('success', 'Cadastrado atualizado com sucesso!');
+    
 
    }
 }

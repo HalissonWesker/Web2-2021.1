@@ -9,7 +9,7 @@
 
 
 <div id="client-regist-container" class="col-md-6 offset-md-3">
-<form action="/updateAluguel" method="POST">
+<form action="{{ route('aluguel.update') }}" method="POST">
     @csrf
     <br>
     <span class="heading-page2">Aluguel</span>

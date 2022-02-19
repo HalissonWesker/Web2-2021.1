@@ -21,7 +21,7 @@
    <span class="heading-page" style="text-align:center;">Clientes</span> <br>
    <div class="menu">
            <div class="botoesmenu"> <a href="/" class="btn btn-sm btn-danger">Voltar</a><br><br>
-            <a href="/CadastroCliente" class="btn btn-sm btn-primary">Cadastrar Cliente</a><br>
+            <a href="{{route('cliente.regist')}}" class="btn btn-sm btn-primary">Cadastrar Cliente</a><br>
    </div>
       
       <thead class="thead-dark">
@@ -45,8 +45,8 @@
             <td>{{ $cli->telefone }}</td>
             <td>{{ $cli->email }}</td>
             <td> 
-               <a class="btn btn-warning" href="/atualizarClientes/{{$cli->id}}" role="button">Editar</a>
-               <a class="btn btn-danger" onclick="return confirm('Quer mesmo deletar? A ação não poderá ser desfeita');" href="/apagarClientes/{{$cli->id}}" role="button">Apagar</
+               <a class="btn btn-warning" href="{{route('cliente.edit',['id' => $cli->id] )}}" role="button">Editar</a>
+               <a class="btn btn-danger" onclick="return confirm('Quer mesmo deletar? A ação não poderá ser desfeita');" href="{{route('cliente.destroy', $cli->id)}}" role="button">Apagar</
             </td>
         
          </tr>

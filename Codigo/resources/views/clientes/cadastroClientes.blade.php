@@ -6,14 +6,14 @@
 
 <div id="client-regist-container" class="col-md-6 offset-md-3">
    <br>
-  <form action="/StoreCliente" method="POST">
+  <form action="{{ route('cliente.store') }}" method="POST">
    
     @csrf
     <span class="heading-page2">Cadastro cliente</span>
     <div class="sombra scale"></div>
     <div class="menu">
     <br>
-       <a href="/clientes" class="btn btn-sm btn-danger">Cancelar</a><br>
+       <a href="{{ route('cliente.index') }}" class="btn btn-sm btn-danger">Cancelar</a><br>
 </div>
       <br>
 
@@ -29,7 +29,7 @@
     </div>
     <div class="form-group">
       <label for="telefone" class="form-label" >Numero de telefone</label>
-      <input type="tel" class="form-control" id="telefone" name="telefone"\ pattern="^(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})$" \ placeholder="Formato valido (99) 9999-9999" required>
+      <input type="tel" class="form-control" id="telefone" name="telefone"\ pattern="^(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})$" \ placeholder="Formato valido (99) 9999-9999" required 'persistent': true>
     </div>
      
     <div class="form-group">

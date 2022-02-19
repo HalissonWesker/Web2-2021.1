@@ -6,13 +6,13 @@
 
 <div id="client-regist-container" class="col-md-6 offset-md-3">
   
-  <form action="/CalcDevolucao" method="POST">
+  <form action="{{route('devolucao.calc')}}" method="POST">
     @csrf <br>
     <span class="heading-page2">Devolução</span>
     <div class="sombra scale"></div>
     <div class="menu">
       <br>
-         <a href="/Devolucao" class="btn btn-sm btn-danger">Cancelar</a><br>
+         <a href="{{ route('devolucao.index') }}" class="btn btn-sm btn-danger">Cancelar</a><br>
   </div>
         <br>
     

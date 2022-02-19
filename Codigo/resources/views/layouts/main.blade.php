@@ -100,6 +100,16 @@
  
 @yield('content')
 </div>
+@if(session()->has('error'))
+    <div style="" id="alert" class="absolute-center">
+        <p class="alert alert-warning" role="alert" style="width:300px;">{{session()->get('error')}}</p>
+    </div>
+@elseif(session()->has('succes'))
+    <div id="alert" class="absolute-center">
+        <p class="alert alert-success" role="alert" style="width:300px;">{{session()->get('succes')}}</p>
+    </div>
+@endif
+</div>
 </div>
 </main>
 <!-- partial -->

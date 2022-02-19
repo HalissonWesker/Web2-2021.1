@@ -9,5 +9,15 @@ class Veiculo extends Model
 {
     use HasFactory;
 
-    protected $fillable = [];
+    protected $fillable = [
+        'ano',
+        'modelo',
+        'placa',
+        'valor_seguro',
+        'valor_diaria'
+    ];
+
+    public function aluguel(){
+        return $this ->belongsTo('App\Models\Aluguel');
+    }
 }

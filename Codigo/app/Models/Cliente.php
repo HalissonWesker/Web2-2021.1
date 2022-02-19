@@ -9,5 +9,11 @@ class Cliente extends Model
 {
     protected $table = 'clientes';
 
-    protected $fillable = [];
+    protected $fillable = [
+        'nome'
+    ];
+
+    public function aluguel(){
+        return $this ->belongsTo('App\Models\Aluguel');
+    }
 }

@@ -8,17 +8,22 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.2.1/dist/alpine.js" defer></script>
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+        <div class=" page-home" style="background-image: url(https://karzansoft.com/wp-content/uploads/2015/08/Car-rental-Software-Systems.jpg);background-position: center;background-size: cover;">
+        
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+        </div>
+
     </body>
 </html>

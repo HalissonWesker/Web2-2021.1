@@ -113,6 +113,20 @@ textarea, label {
   .btn:hover, .btn:focus, .btn:active:focus {
     outline: 0 none; }
 
+
+.btn-success {
+
+    border: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    height: 48px;
+    line-height: 50px;
+    padding: 0 42px;
+    text-transform: uppercase; }
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
+      background-color: #fff5f5; }
+    
+
 .btn-primary {
   background-color: #1e2530;
   border: 0;

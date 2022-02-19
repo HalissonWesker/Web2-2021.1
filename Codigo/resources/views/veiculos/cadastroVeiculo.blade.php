@@ -8,13 +8,13 @@
 
 <div id="client-regist-container" class="col-md-6 offset-md-3">
   
-  <form action="/StoreVeiculo" method="POST">
+  <form action="{{ route('veiculo.store') }} " method="POST">
     @csrf <br>
     <span class="heading-page2">Cadastrar Veículo</span>
     <div class="sombra scale"></div>
     <div class="menu">
       <br>
-         <a href="/veiculos" class="btn btn-sm btn-danger">Cancelar</a><br>
+         <a href="{{ route('veiculo.index') }}" class="btn btn-sm btn-danger">Cancelar</a><br>
   </div>
     <br>
     <div class="form-group">

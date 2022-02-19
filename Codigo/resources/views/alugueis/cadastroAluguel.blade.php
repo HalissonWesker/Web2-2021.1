@@ -4,12 +4,8 @@
 
 @section('content')
 
-<!-- @section('breadcrumb', 'cliente','disponivel') -->
-
-
-
 <div id="client-regist-container" class="col-md-6 offset-md-3">
-<form action="/storeAluguel" method="POST">
+<form action="{{ route('aluguel.store') }}" method="POST">
     @csrf
     <br>
     <span class="heading-page2">Aluguel</span>

@@ -7,7 +7,7 @@ use App\Models\Veiculo;
 
 class VeiculoController extends Controller
 {
-    public function show(){
+    public function index(){
 
         $veiculo = Veiculo::all();
 
@@ -21,15 +21,9 @@ class VeiculoController extends Controller
         
         $veicuValidate = Veiculo::where('placa', $request->placa)->get();
         if(count($veicuValidate)){
-        return redirect()->route('cadastroveiculo')->with('error', 'Placa já cadastrada');
+        return redirect()->route('veiculo.regis')->with('error', 'Placa já cadastrada');
         }
 
-     
-        
-
-        // if(!empty(Veiculo::find('placa',$request->placa))){
-        //     return redirect('/CadastroVeiculo');
-        // }else{
         $veiculo = new Veiculo;
   
         $veiculo->ano = $request->ano;
@@ -40,7 +34,7 @@ class VeiculoController extends Controller
      
         $veiculo->save();
   
-        return redirect('/veiculos');
+        return redirect()->route('veiculo.index')->with('sucess', 'Veiculo cadastrado!');
         
   
     }
@@ -48,17 +42,21 @@ class VeiculoController extends Controller
 
         $veiculo = Veiculo::find($id);
         if($veiculo->status == 'ALUGADO'){
-            return redirect('/veiculos')->with('error', 'Não é possivel excluir veiculo alugado');
+            return redirect()->route('veiculo.index')->with('error', 'Não é possivel excluir veiculo alugado');
         }else{
             $veiculo->delete();
-            return redirect('/veiculos')->with('sucess', 'Veiculo excluido');
+            return redirect()->route('veiculo.index')->with('sucess', 'Veiculo excluido com sucesso!');
         }
     }
 
     public function create($id){
         $veiculo = Veiculo::find($id);
   
-        return view('veiculos.atualizarVeiculo', ['veiculo' => $veiculo]);
+        return view('veiculos.atualizarveiculo', ['veiculo' => $veiculo]);
+     }
+
+     public function formulario(){
+        return view('veiculos.cadastroveiculo');
      }
 
      public function update(Request $request){
@@ -72,7 +70,7 @@ class VeiculoController extends Controller
      
         $veiculo->save();
   
-        return redirect('/veiculos');
+        return redirect()->route('veiculo.index')->with('sucess', 'operação realizada com sucesso');
 
      }
 }

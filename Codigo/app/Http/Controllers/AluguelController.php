@@ -10,17 +10,10 @@ use App\Models\Cliente;
 
 class AluguelController extends Controller
 {
-    public function show(){
+    public function index(){
             
-
-
         $aluguel = Aluguel::where('status', 'aguardando')->get();// só alugueis ativos os outros ficam em devolução
-        // $aluguel->veiculo_id = Veiculo::where('id', $aluguel->veiculo_id);
-        // $aluguel->cliente_id = Cliente::where('id', $aluguel->cliente_id);
-
-        // dd($aluguel);
-
-
+  
         $all = array();
         foreach($aluguel as $alu){
             $veiculos = Veiculo::find($alu->veiculo_id);
@@ -29,7 +22,7 @@ class AluguelController extends Controller
             
         }
 
-        return view('alugueis.viewAlugueis', ['aluguel' => $all]);
+        return view('alugueis.viewalugueis', ['aluguel' => $all]);
 
     }
     
@@ -37,7 +30,7 @@ class AluguelController extends Controller
         $veiculos = Veiculo::where('status', 'disponivel')->get();
         $clientes = Cliente::all();
 
-        return view('alugueis.cadastroAluguel', compact('clientes', 'veiculos'));
+        return view('alugueis.cadastroaluguel', compact('clientes', 'veiculos'));
 
     }
   
@@ -56,22 +49,23 @@ class AluguelController extends Controller
         $veiculo->save();
         
 
-        return redirect('/aluguel');
+        return redirect()->route('aluguel.index')->with('success', 'Aluguel realizado com sucesso');
+
     }
-    public function showDev(){
+
+
+    public function indexdev(){
         $aluguel = Aluguel::where('status', 'finalizado')->get();// só alugueis inativos os outros ficam em aluguel
         $all = array();
         foreach($aluguel as $alu){
             $veiculos = Veiculo::find($alu->veiculo_id);
             $clientes = Cliente::find($alu->cliente_id);
-            //mudar para os campos que vai usar na devolução
-            //lembrar que delete na devolução é mudar ele para ativo não apagar a linha é o que dá usar tudo junto
         array_push($all,['nome'=> $clientes->nome,'total'=> $alu->valor_total,'pago'=>$alu->valor_pago, 'loca'=> $alu->data_devolucao, 'notas'=> $alu->notas, 'veiculo'=> $veiculos->placa,'modelo'=> $veiculos->modelo, 'id'=>$alu->id, 'pag'=> $alu->forma_pagamento]);
         }
-        return view('devolucoes.viewDevolucoes', ['aluguel' => $all]);
+        return view('devolucoes.viewdevolucoes', ['aluguel' => $all]);
 
     }
-    public function storeDev(Request $request){
+    public function storedev(Request $request){
         $aluguel = Aluguel::find($request->id);
         $aluguel->valor_total = $request->valor_total;
         $aluguel->valor_pago = $request->valor_pago;
@@ -84,9 +78,11 @@ class AluguelController extends Controller
         $veiculo = Veiculo::find($aluguel->veiculo_id);
         $veiculo->status = 'DISPONIVEL';
         $veiculo->save();
-        return redirect('/Devolucao');
+
+        return redirect()->route('devolucao.index')->with('success', 'Devolução realizado com sucesso');
+
     }
-    public function createDev(){
+    public function createdev(){
         $aluguel = Aluguel::where('status', 'aguardando')->get();// só alugueis ativos os outros ficam em devolução
         $all = array();
         foreach($aluguel as $alu){

@@ -6,8 +6,9 @@
 
 <div id="client-regist-container" class="col-md-6 offset-md-3">
   
-  <form action="/StoreDevolucao" method="POST">
+  <form action="{{route('devolucao.store')}}" method="POST">
     @csrf <br>
+  
     <span class="heading-page2">Pagamento</span>
     <div class="sombra scale"></div>
     <br>
@@ -25,9 +26,8 @@
     </div>
       <label for="title">Forma de Pagamento:</label>
       <input type="text" class="form-control" id="forma_pagamento" name="forma_pagamento" placeholder="Digite..." required>
-    </div>   <div class="form-group">
-    
-     <input type="submit" class="btn btn-primary" value="Realizar devolução">
+    </div> <div class="form-group">
+       <input type="submit" class="btn btn-success" value="Confirmar Pagamento " >
   </form>
 </div>
 

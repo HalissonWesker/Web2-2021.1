@@ -17,7 +17,7 @@
 
                                 <div class="hexagon-menu clear">
                                     <div class="hexagon-item">
-                                        <a href="/clientes"><div class="hex-item">
+                                        <a href="{{ route('cliente.index') }}"><div class="hex-item">
                                             <div></div>
                                             <div></div>
                                             <div></div>
@@ -38,7 +38,7 @@
                                         </a>
                                     </div>
                                     <div class="hexagon-item">
-                                        <a href="/veiculos"><div class="hex-item">
+                                        <a href="{{ route('veiculo.index') }}"><div class="hex-item">
                                             <div></div>
                                             <div></div>
                                             <div></div>
@@ -59,7 +59,7 @@
                                         </a>
                                     </div>
                                     <div class="hexagon-item">
-                                        <a href="/aluguel"><div class="hex-item">
+                                        <a href="{{ route('aluguel.index') }}"><div class="hex-item">
                                             <div></div>
                                             <div></div>
                                             <div></div>
@@ -80,7 +80,7 @@
                                         </a>    
                                     </div>
                                     <div class="hexagon-item">
-                                        <a href="/Devolucao"> <div class="hex-item">
+                                        <a href="{{route('devolucao.index') }}"> <div class="hex-item">
                                             <div></div>
                                             <div></div>
                                             <div></div>
